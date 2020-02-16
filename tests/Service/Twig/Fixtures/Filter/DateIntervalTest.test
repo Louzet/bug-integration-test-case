@@ -1,0 +1,8 @@
+--TEST--
+"dateInterval" function
+--TEMPLATE--
+{{ dateInterval(dateIntervalSpec).format('%m') }}
+--DATA--
+return ['dateIntervalSpec' => '1 months']
+--EXPECT--
+1
